@@ -1,4 +1,4 @@
-import * as styled from "styled-components";
+import * as styled from 'styled-components'
 
 const GlobalStyle = styled.createGlobalStyle`
   *,
@@ -18,7 +18,7 @@ const GlobalStyle = styled.createGlobalStyle`
   }
 
   body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     background-color: ${({ theme }) => theme.colors.grey.light};
     /* Footer support */
@@ -68,5 +68,5 @@ const GlobalStyle = styled.createGlobalStyle`
       font-size: 45%;
     }
   }
-`;
-export default GlobalStyle;
+`
+export default GlobalStyle
