@@ -88,6 +88,63 @@ const ButtonWrapper = styled.button`
         transform: scale(1.02);
       }
     `}
+    ${({ animation }) =>
+    animation === "color" &&
+    css`
+      transition: background-color 0.15s ease-in-out;
+
+      ${({ color }) =>
+        color === "primary" &&
+        css`
+          &:hover {
+            background-color: ${({ theme }) => theme.colors.hover.primary};
+          }
+
+          &:active {
+            background-color: ${({ theme }) => theme.colors.active.primary};
+            transition: background-color 0.05s ease-in-out;
+          }
+        `}
+
+      ${({ color }) =>
+        color === "red" &&
+        css`
+          &:hover {
+            background-color: ${({ theme }) => theme.colors.hover.red};
+          }
+
+          &:active {
+            background-color: ${({ theme }) => theme.colors.active.red};
+            transition: background-color 0.05s ease-in-out;
+          }
+        `}
+
+        ${({ color }) =>
+        color === "grey" &&
+        css`
+          &:hover {
+            background-color: ${({ theme }) => theme.colors.hover.grey};
+          }
+
+          &:active {
+            background-color: ${({ theme }) => theme.colors.active.grey};
+            transition: background-color 0.05s ease-in-out;
+          }
+        `}
+
+        ${({ color }) =>
+        color === "dark" &&
+        css`
+          &:hover {
+            background-color: ${({ theme }) => theme.colors.hover.dark};
+          }
+
+          &:active {
+            background-color: ${({ theme }) => theme.colors.active.dark};
+            transition: background-color 0.05s ease-in-out;
+          }
+        `}
+    `}
 `;
 
 export default Button;
