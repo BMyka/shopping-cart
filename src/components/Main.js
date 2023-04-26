@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
+import Contact from "../pages/Contact";
 import routes from "../constants/routes.json";
 
 const Main = () => {
@@ -9,6 +10,7 @@ const Main = () => {
     <MainWrapper>
       <Routes>
         <Route path={routes.HOME} element={<Home />} />
+        <Route path={routes.CONTACT} element={<Contact />} />
       </Routes>
     </MainWrapper>
   );
