@@ -13,6 +13,7 @@ const Main = () => {
         <Route path={routes.HOME} element={<Home />} />
         <Route path={routes.PRODUCTS} element={<Products />} />
         <Route path={routes.CONTACT} element={<Contact />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </MainWrapper>
   );
